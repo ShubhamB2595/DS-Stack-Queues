@@ -43,7 +43,16 @@ public class Queue {
 		}
 	}
 	
-	
+	//method to deleting first element from queue
+	void dequeue() {
+			
+		if(front == null) {
+			System.out.println("Queue is empty");
+		}
+		else {
+			front = front.next;
+		}
+	}
 
 	//Constructor
 	public Queue() {
